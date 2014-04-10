@@ -85,9 +85,13 @@ body {
 }
 
 .container {
-  position: relative;
-  top: 40%;
-  transform: translateY(-40%);
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  left:0; 
+  right:0;
+  margin:auto; 
+  height:240px; 
   
   text-align: center;
 }
@@ -99,7 +103,7 @@ body {
 .contact {
   background-color: #393433;
   background-color: rgba(51,52,57, 0.8);
-  padding: 20px 0;
+  padding: 20px 10px;
   width: 100%;
   text-align: center;
 }
@@ -107,14 +111,6 @@ body {
 .contact a, .contact p {
   color: white;
 }
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
