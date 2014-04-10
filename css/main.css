@@ -78,7 +78,7 @@ a:hover {
 }
 
 body {
-  background-image: url(/img/background.svg);
+  background-image: url(../img/background.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
