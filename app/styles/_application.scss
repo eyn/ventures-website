@@ -1,0 +1,50 @@
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.full-page {
+  height: 100%;
+  width: 100%;
+}
+
+.section-title {
+  @extend .container;
+
+  color: $white;
+}
+
+section.intro {
+  h1 {
+    @extend .container;
+    @extend .vertical-center;
+
+    text-align: center;
+  }
+}
+
+section.what-we-do {
+  background-color: $red;
+
+  h1 {
+    @extend .container;
+    @extend .vertical-center;
+
+    color: $white;
+  }
+}
+
+section.quote {
+  blockquote {
+    @extend .container;
+    @extend .vertical-center;
+
+    font-size: 32px;
+  }
+
+  .author {
+    margin-top: 16px;
+    display: block;
+    font-weight: bold;
+  }
+}
