@@ -1,17 +1,27 @@
 .container {
-  width: 720px;
+  @include width(4);
   margin: 0 auto;
 }
 
 .full-page {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .section-title {
   @extend .container;
 
   color: $white;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5rem;
+}
+
+section {
+  position: relative;
 }
 
 section.intro {
@@ -20,6 +30,7 @@ section.intro {
     @extend .vertical-center;
 
     text-align: center;
+    color: $grey;
   }
 }
 
@@ -34,17 +45,62 @@ section.what-we-do {
   }
 }
 
+section.what-we-do:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: $red;
+  -webkit-transform:skewY(-4deg);
+
+  position: absolute;
+  bottom: -50px;
+  z-index: 10;
+}
+
+section.our-approach {
+  background-image: url("/coffee-area.jpeg");
+  background-size: cover;
+
+  .title {
+    color: $black;
+
+    top: 6rem;
+  }
+}
+
 section.quote {
   blockquote {
     @extend .container;
     @extend .vertical-center;
 
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .author {
-    margin-top: 16px;
+    margin-top: 1rem;
     display: block;
     font-weight: bold;
+  }
+}
+
+section.made-earlier:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: $light-grey;
+  -webkit-transform:skewY(-4deg);
+
+  position: absolute;
+  top: -50px;
+  z-index: 10;
+}
+
+section.made-earlier {
+  background-color: $light-grey;
+
+  .title {
+    color: $grey;
   }
 }

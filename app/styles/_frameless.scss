@@ -41,7 +41,7 @@ $cols16: (16 * ($column + $gutter) - $gutter) / $em;
 //
 
 @mixin width ($cols:1) {
-	width: ($cols * ($column + $gutter) - $gutter) / $em;
+	width: ($cols * ($column + $gutter) - $gutter);
 }
 
 /*
