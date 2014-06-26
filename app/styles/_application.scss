@@ -4,7 +4,7 @@
 }
 
 .full-page {
-  height: 100%;
+  height: 90%;
   width: 100%;
   position: relative;
 }
@@ -25,6 +25,8 @@ section {
 }
 
 section.intro {
+  background-color: $lighter-grey;
+
   h1 {
     @extend .container;
     @extend .vertical-center;
@@ -65,7 +67,7 @@ section.our-approach {
   .title {
     color: $black;
 
-    top: 6rem;
+    top: 7rem;
   }
 }
 
