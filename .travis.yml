@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
-install: npm install; bower install
+install: npm install; npm install bower; bower install
 script: ember build --environment production
 deploy:
   edge: true
