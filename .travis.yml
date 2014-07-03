@@ -12,7 +12,7 @@ deploy:
   bucket: redgate.ventures
   skip_cleanup: true
   endpoint: redgate.ventures.s3-website-us-east-1.amazonaws.com
-  region: eu-west-1
+  region: us-east-1
   local-dir: dist
   detect_encoding: true
   cache_control: max-age=2592000
