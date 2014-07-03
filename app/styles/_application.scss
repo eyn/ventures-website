@@ -8,7 +8,7 @@
 }
 
 .full-page {
-  height: 90%;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -77,14 +77,15 @@ section.what-we-do:after {
 section.our-approach {
   background: url("/coffee-area.jpeg") no-repeat top right;
   background-size: cover;
+  padding-top: 8rem;
 
-  .title {
+  .section-title {
     color: $black;
-
-    top: 7rem;
+    background-color: rgba($white, 0.5);
+    display: table;
+    padding: 1rem;
   }
 }
-
 
 section.our-approach-description {
   @extend .container;
