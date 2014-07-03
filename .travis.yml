@@ -4,17 +4,9 @@ node_js:
 install: npm install; npm install bower; bower install
 script: ember build --environment production
 deploy:
-  edge: true
   provider: s3
-  access_key_id: AKIAIIALQ2ZY23VOG3NA
+  access_key_id: AKIAJGEEMQG3JBBJ4FTA
   secret_access_key:
-    secure: Jy6r0ZnYZoDnBv21ZEdQG/vtcHJvyFbR9HBg8uRfa0xdrHdJZRcv01pE8kOO01MGXvqjm7EW6bXX4iQ3cQRy+mruJtMEswldxcDeob2W59vianhNliAk2OaNDjmpq+ixANNSwu3rUEwII8tbc9ia4PVGZDs9NVbCkbKLEMtNf9s=
-  bucket: redgate.ventures
-  skip_cleanup: true
-  endpoint: redgate.ventures.s3-website-us-east-1.amazonaws.com
-  region: us-east-1
+    secure: VRHAd8VQryfQb1L7oiewP68JT09UMxbNYDmocTHXnbeWsclgHx+b364miNHsE32Zz04PVatksFXjZjdSdkfI148t71q+J2j5TyXunrBkPStnh/0hQOKicULWuLjKtbjaoCy3OAIDqge3l7xAnCCrurJUV2Z638cmoyU6a6d9sM0=
+  bucket: redgate.ventures.s3-website-us-east-1.amazonaws.com
   local-dir: dist
-  detect_encoding: true
-  cache_control: max-age=2592000
-  on:
-    branch: master
