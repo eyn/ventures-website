@@ -8,6 +8,8 @@ deploy:
   access_key_id: AKIAJGEEMQG3JBBJ4FTA
   secret_access_key:
     secure: VRHAd8VQryfQb1L7oiewP68JT09UMxbNYDmocTHXnbeWsclgHx+b364miNHsE32Zz04PVatksFXjZjdSdkfI148t71q+J2j5TyXunrBkPStnh/0hQOKicULWuLjKtbjaoCy3OAIDqge3l7xAnCCrurJUV2Z638cmoyU6a6d9sM0=
-  bucket: redgate.ventures.s3-website-us-east-1.amazonaws.com
+  bucket: redgate.ventures
+  endpoint: redgate.ventures.s3-website-us-east-1.amazonaws.com
+  region: us-east-1
   local-dir: dist
   skip_cleanup: true
