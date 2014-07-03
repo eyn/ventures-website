@@ -113,6 +113,9 @@ section.made-earlier:before {
 
 section.made-earlier {
   background-color: $light-grey;
+  padding: 4rem 0;
+  position: relative;
+  text-align: center;
 
   .title {
     color: $black;
@@ -120,8 +123,7 @@ section.made-earlier {
 
   .products {
     @extend .container;
-    @extend .vertical-center;
-
+    margin-top: 4rem;
     text-align: center;
 
     .product {
