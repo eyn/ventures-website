@@ -1,4 +1,13 @@
-redgate-ventures.github.io
+[redgate.ventures](http://redgate.ventures)
 ==========================
 
-Red Gate Ventures website
+To build
+--------
+```
+npm install
+broccoli serve
+```
+
+To ship
+-------
+Open a pull request
