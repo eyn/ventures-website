@@ -4,18 +4,23 @@ body {
   text-rendering: optimizeLegibility;
   color: $text;
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   margin-top: .2rem;
   margin-bottom: .5rem;
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -24,10 +29,8 @@ p {
   margin-bottom: 1.25rem;
 }
 
-.title {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.5rem;
+a {
+  color: $link;
 }
 
 blockquote .quote:before {
