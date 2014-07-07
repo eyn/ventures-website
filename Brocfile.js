@@ -7,7 +7,7 @@ var html = jade('templates', {
   basedir: 'templates'
 });
 
-var css = compileSass(['styles'], 'main.scss', 'style.css');
+var css = compileSass(['styles'], 'main.scss', 'style.css', {sourceMap: true, outputStyle: 'compressed'});
 
 var assets = pickFiles('public', {
   srcDir: '/',
