@@ -20,6 +20,12 @@
     width: 406px;
   }
 
+  section.what-we-do {
+    .section-title {
+      visibility: visible;
+    }
+  }
+
   section.our-approach-description {
     p {
       font-size: 1.5rem;
