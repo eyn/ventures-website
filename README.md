@@ -7,7 +7,7 @@ To build
 Install [node.js](http://nodejs.org/)
 ```
 npm install
-broccoli serve
+npm run start
 ```
 
 To make changes
